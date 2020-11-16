@@ -32,5 +32,22 @@ calibrare a dozelor VDC-603 poate sa fie stins doar prin scoaterea din priza a a
 
 * Poza 3
 
+- Tastele de navigatie
 
+  Doua taste indicate prin simbolurile "sus" si "jos" (sageti) sunt folosite pentru a derula prin meniuri si pentru a 
+modifica valori.
+
+- Tasta OK
+
+  Tasta OK este folosita pentru a intra in meniul utilizatorului atunci cand VDC-603 afiseaza ecranul de masura. 
+Aceasta tasta este folosita si pentru a intra in sau executa elemente din meniu, pentru a confirma editarea 
+valorilor si pentru a selecta elemente dintr-o lista, de exemplu: un nuclid de masurat, o limba sau o unitate
+de masura.
+
+5.2 Editarea valorilor numerice
+
+Daca editarea valorilor sau introducerea unei parole este necesara, prima cifra a acestei valori va incepe sa clipeasca
+pe ecran. Este posibil sa editezi aceasta cifra prin folosirea tastelor de navigatie (alea cu sageti in sus si in jos).
+Daca o cifra are valoarea corecta, puteti confirma acest lucru prin apasarea tastei OK, iar urmatoarea cifra se va
+selecta automat. Daca ultima cifra este confirmata cu tasta OK, intreaga valoare va fi confirmata.
 
