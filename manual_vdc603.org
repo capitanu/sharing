@@ -18,3 +18,19 @@ masoare, transforma si returneaza activitatea masurata catre VDC-603 cu setarile
 Unitatea de citire si control a sistemului are grija de selectia nuclidului si de functia de afisare a activitatii.
 Puterea (5 VDC) pentru procesarea semnalului electronicelor in compartimentul de ionizare este
 data de cablul de date.
+
+* Poza 2
+
+Sistemul va afisa numele producatorului atunci cand porneste, versiunea firmware-ului VDC-603 si versiunea firmwareului
+compartimentului de ionizare. O cerere de conectare a compartimentului de ionizare este afisata daca compartimentul de
+ionizare nu este conectat sau nu este conectat cum trebuie. Secventa de pornire continua cand comparimentul de ionizare
+este conectat cum trebuie.
+
+Dat fiind faptul ca este necesar ca compartimentul de ionizare sa fie stabil astfel incat masuratorile sa fie 
+precise, este recomandat sa lasati VDC-603 si compartimentul de ionizare pornite mereu. Din acest motiv, sistemul de
+calibrare a dozelor VDC-603 poate sa fie stins doar prin scoaterea din priza a acestuia.
+
+* Poza 3
+
+
+
