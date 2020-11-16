@@ -1,4 +1,20 @@
 #+TITLE: MANUAL VDC603
 #+AUTHOR: Calin Capitanu
 
-* 
+* Poza 1
+
+VDC-603 este parte din sistemul de masurare (Calibrator de doza radionuclida)
+care este folosit sa masoare activitatea radioactiva a unei surse. VDC-603 are functia de 
+sistem de a citi si de a controla. Un factor izotop al listei de nuclizi
+in VDC 603 poate fi trimis la camera de ionizare din meniu. Partea de detectare a compartimentului
+de ionizare este reprezentatea de un compartiment cu gaz in forma circulara de "U", cunoscut si 
+ca "Well type chamber" (Compartimentul tipului bun). Mai multe configuratii cu compartimente
+de ionizare sunt posibile. O unitatea de citire si control VDC-603 cu un compartiment de
+ionizare VIK-202 va forma un calibrator de doza VDC-603, o unitate de citire si control  
+VDC-603 cu compartiment de ionizare VIK-203 va forma un calibrator de doza VDC-603XR.
+
+Cand o cerere de date este trimisa de unitatea de citire si control VDC-603, compartimentul de ionizare
+masoare, transforma si returneaza activitatea masurata catre VDC-603 cu setarile de nuclid furnizate.
+Unitatea de citire si control a sistemului are grija de selectia nuclidului si de functia de afisare a activitatii.
+Puterea (5 VDC) pentru procesarea semnalului electronicelor in compartimentul de ionizare este
+data de cablul de date.
