@@ -51,3 +51,51 @@ pe ecran. Este posibil sa editezi aceasta cifra prin folosirea tastelor de navig
 Daca o cifra are valoarea corecta, puteti confirma acest lucru prin apasarea tastei OK, iar urmatoarea cifra se va
 selecta automat. Daca ultima cifra este confirmata cu tasta OK, intreaga valoare va fi confirmata.
 
+* Poza 4
+
+5.3 Ecranul de masurare
+
+Ecranul standard de afisare este ecranul de masurare. Dupa o pornire reusita a VDC-603, acesta va afisa ecranul de
+masurare si va actualiza masuratoarea activitatii la fiecare 2 secunde. Ecranul de masurare este independent de 
+limba si este compus din 3 zone in care urmatarele proprietati sunt afisate:
+
+1. Activitatea
+2. Unitatea de masurare
+3. Izotopul selectat
+
+Este important ca izotopul selectat sa fie acelasi cu cel masurat. Unitatile de masura sunt selectabile din
+meniul utilizatorului, astfel incat sa fie fie Becquerel (mod implicit - asa e in mod normal) sau Curie.
+Scalarea la kBq, MBq sau GBq este facuta automat, depinzand de activitatea masurata.
+
+Marginile in care aceste unitati sunt folosite sunt:
+<poza nu se vede mai departe>
+
+* Poza 5
+
+5.4 Structura meniurile
+
+5.4.1 Meniul operator
+
+Meniul operator al VDC-603 este acesibil prin apasarea tastei OK in timp ce ecranul de masurare este prezent (afisat).
+Masuratoarea activitati va inceta, meniul operator se deschide si prima intrare a meniului va fi afisata. Este posibil
+sa derulezi prin meniu apasand pe tastele de navigatie (sagetile in sus si in jos). O element al meniului poate fi
+accesat prin apasarea tastei OK.
+
+Structura meniului operator:
+
+1. SELECTEAZA IZOTOP
+2. EXECUTA ZERO
+3. SETEAZA INTERFATA
+4. VERIFICA HV
+5. UNITATE
+6. LIMBA
+7. AFISEAZA PARAMETRII
+8. ECONOMISIRE ENERGIE
+9. IESI DIN MENIU
+
+Dupa executarea unui element din meniu, VDC-603 se va intoarce la ecranul de masurare. Ultimul element al meniului este 'EXIT MENU',
+iar acesta va iesi din meniul operator si se va intoarce la ecranul de masurare. VDC-603 va iesi automat din meniul operator atunci
+cand nicio tasta nu este apasata pentru 15 secunde.
+
+* Poza 6
+
