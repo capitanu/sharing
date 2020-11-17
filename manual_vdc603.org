@@ -99,3 +99,263 @@ cand nicio tasta nu este apasata pentru 15 secunde.
 
 * Poza 6
 
+5.4.2 Meniul de supraveghere
+
+Meniul de supraveghere al VDC-603 este accesibil prin apasarea simultana a butoanelor de navigatie atunci cand ecranul de masurare 
+este afisat. Masurarea activitati va inceta si utilizatorului ii este ceruta introducerea unei parole. Introducerea parolei gresite
+va rezulta in afisarea unei erori, iar prin apasarea oricarei taste, se va reveni la ecranul de masurare. Introducerea parolei corecte
+va permite accesul in meniul de supraveghere in care primul element din acest meniu va fi afisat. Este posibil sa derulezi prin acest
+meniu cu ajutorul tastelor de navigatie. Accesarea unui element este efectuata prin apasarea tastei OK.
+
+Structura meniului operator:
+
+1. SELECTEAZA IZOTOP
+2. EXECUTA ZERO
+3. SETEAZA INTERFATA
+4. VERIFICA HV
+5. UNITATE
+6. LIMBA
+7. AFISEAZA PARAMETRII
+8. ECONOMISIRE ENERGIE
+9. CALIBRAREA IZOTOPULUI
+10. CALIBRAREA VIK
+11. CALIBRAREA BATERIEI
+12. SECURIZAREA VIK
+13. EDITAREA PAROLEI
+14. RESETAREA LA VALORILE DIN FACBRICA
+15. IESI DIN MENIU
+
+Dupa executarea unui element din meniu, VDC-603 va reveni la meniul de supraveghere.
+
+Ultimul element din meniu, "EXIT MENU" (IESI DIN MENIU), va iesi din meniul operator si va reveni la ecranul
+de masurare. Dupa 15 secunde de inactivitate, VDC-603 va iesi automat din meniul operator.
+
+5.5 Elementele din Meniu
+
+5.5.1 Selectarea izotopului
+
+Acest element este disponibil in meniul operator, cat si in meniul de supraveghere.
+
+AVERTISMENT!
+
+Selectarea unui nuclid gresit va rezulta in afisarea gresita a masuratorilor! Nuclidul selectat este mereu vizibil
+in ecranul de masurare si trebuie ca intotdeauna sa fie acelasi cu nuclidul masurat.
+
+Acest meniu da posibilitatea de a schimba factorul izotopic folosit de compartimentul de ionizare pentru calcularea
+activitatii. Factorul izotopic este o valoarea specific calibrata pentru nuclid pentru compartimentul de ionizarea
+si a fost determinat de Cemcer Olanda.
+
+Dupa intrarea in acest element al meniului, factorul izotopic curent este pre-selectat. Un factor izotopic
+diferit poate fi selectat prin derularea prin lista de nuclizi cu tastele de navigatie. Un factor izotopic este 
+selectat prin apasarea tastei OK in momentul in care nuclidul corespunzator este afisat. Prin selectarea unui nuclid
+din lista, VDC-603 va trimite factorul izotopic corespunzator catre compartimentul de ionizare VIK-202 si va reveni
+la meniu.
+
+Trei elemente aditionale USR-1, USR-2 si USR-3 sunt disponibile in lista de nuclizi pentru factori izotopici
+specificati de utilizator (adica ii poti configura tu). Acesti factori izotopici pot fi programati prin calibrarea
+functiei de izotop din meniul de supraveghere (vezi sectiunea 5.5.9).
+
+* Poza 7
+
+5.5.2 Executarea zero
+
+Acest element de meniu este disponibil in meniul operator si in meniul de supraveghere.
+
+*AVERTISMENT*
+
+Inainte de invocarea acestei comenzi, fi sigur ca nu exista nicio activitate in sau pe langa compartimentului de 
+ionizare! O ajustare de tip "zero" ar trebuit sa fie efectuata numai cand compartimentul de ionizare este stabil dupa
+"o pornire la rece" sau dupa o verificare la tensiune inalta.
+
+
+Acest element din meniu ofera posibilitatea de a efectua o ajustare "zero" a compartimentului de ionizare. Cu aceasta
+comanda, amplificatoarele interne ale compartimentului de ionizare sunt ajustate.
+
+Doua valori sunt afisate dupa ce aceasta ajustare este realizata. Aceste valori dau informatii despre personalul de
+service si ar trebui sa fie si verificate cu valorile de calibrare scrise in raport.
+
+*ATENTIE*
+
+O deviere mai mare de 10% de la ziua precendenta poate indica o contamiare a compartimentului de ionizare, a captuselii
+si/sau a causului. O alta cauza poate fi saturarea pachetului de gel silica. Referinta la capitolul 7.1.3 pentru urmatorii
+pasi.
+
+5.5.3 Seteaza interfata
+
+Acest element de meniu este disponibil fie in meniul operator sau in meniul de supraveghere.
+
+Interfata curenta a compartimentului de ionizare poate fi ajustata intrand in acest meniu. Cand elementul de meniu este
+accesat, interfata curenta si setarea interfetei (implicit este 50) sunt afisate. Fiecare cifra a acestei valori poate fi 
+editata cu tastele de navigatie si confirmate cu tasta OK. Marind aceasta valoare va scadea interfata curenta si scaderea
+acestei valori va rezulta intr-o mai mare interfata curenta. Este important pentru compartimentul de ionizare ca interfata
+curenta sa fie in jurul a 0.1pA. O deviere de +/- 0.05pA de la aceasta valoare este permisa.
+
+Daca ultima cifra este confirmata, compartimentul de ionizare isi va seta noua valoare a interfetei. Valorile corespunzatoare 
+curente ale interfetei sunt afisate si confirmarea este ceruta pentru 5 secunde. Daca tasta OK este apasata in timpul acestor
+5 secunde atunci setarile sunt acceptate, altfel setarile interfetei pot fi re-editate.
+
+Compartimentul de ionizare trebuie sa fie stabil si ajustarea de tip "zero" (vezi sectiunea 5.5.2) ar trebui sa fie 
+efectuate inaintea modificarii setarilor interfetei a compartimentului de ionizare.
+
+5.5.4 Verificarea HV
+
+Acest element de meniu este accesibil din meniul operator sau din meniul de supraveghere.
+
+Selectand acest element din meniu va rezulta in afisarea voltajului aplicat la electrolizii compartimentului de ionizare.
+Depinzand de constructia compartimentului de ionizare, poate dura pana la 20 de secunde sa se determine voltajul.
+
+Voltajul nu ar trebui sa fie mai mic de 145 Vdc. Daca voltajul este mai mic de 145 Vdc, compartimentul de ionizare va 
+continua sa opereze, dar performanta si acuratetea acestuia va fi deteriorata. Apasand tasta OK, VDC-603 se va intoarce
+la meniu.
+
+* Poza 8
+
+5.5.8 Economisirea energiei
+
+Acest element de meniu poate fi accesat fie din meniul operator sau din meniul de supraveghere.
+
+
+Optiunea de economisire a energiei este pornita in mod implicit. Dupa 5 minute de inactivitate, lumina de fundal a ecranului
+va se va stinge pentru a conserva energia. Compartimentul de ionizare va ramane pornit pentru a fi tinut intr-o stare de
+"pregatit pentru masurare".
+
+Lumina de funal este pornita din nou daca activitatea masurata depaseste 200 kBq sau prin apasarea oricarei taste.
+
+5.5.9 Calibrarea izotopului
+
+Acest element de meniu poate fi accesat doar din meniul de supraveghere.
+
+Factorii ziotopici folositi de compartimentul de ionizare au fost determinati de Comecer Olanda pentru toti nuclizii care
+pot fi selectati in meniul "SELECT ISOTOP" (Selecteaza izotopul). In mod normal, acesti factori izotopici ar trebui sa fie 
+suficienti. Este posibil ca supervizorul sa modifice acesti factori izotopici din acest meniu, de exemplu in momentul in 
+care este folosit un alt caus sau un recipient specific. Este de asemenea posibil sa specifici factori izotopici creati
+de utilizator in USR-1, USR-2 si USR-3.
+
+Dupa accesarea acestui element de meniu, VDC-603 va afisa factorul izotopic curent. Acest factor poate fi modificat 
+urmarind intrusctiunile din sectiunea 5.2. Dupa ce ultima cifra din factorul izotopic este confirmata, o factor
+scalar potrivit trebuie selectat.
+
+Va rog referiti-va la manualul pentru compartimentul de ionizare pentru cum se determina un factor izotopic corect si 
+un factor scalar pentru un nuclid specific, recipient sau caus.
+
+Factorul scalar folosit si factorul izotopic calculat ar trebui sa fie verificate prin introducerea acestora in VDC-603 si,
+folosind sursa de calibrare care a fost folosita pentru determinarea factorului izotopic, verificand valoarea ajusata cu
+activitatea curenta emisa de sursa. Este posibil ca factorul determinat sa trebuiasca sa fie ajustat pentru a obtine o 
+citire corecta.
+
+Este recomandat sa scrii orice modificare facuta la factorul izotopic implicit.
+
+
+5.5.10 Calibrarea VIK-202
+
+Acest element de meniu este disponibil numai in meniul de supraveghere.
+
+*ATENTIE*
+
+Inainte de inceperea calibrarii, asigura-te ca compartimentul de ionizare nu are nicio activitate sau contaminare. Compartimentul
+de ionizare ar trebui sa fie pregatit sa masoare (vezi sectiunea 4.2) inainte de calibrare. Asigura-te ca factorii izotopici 
+ai sursei de calibrare sunt aceeasi cu cei lsitati in apendice (nu stiu daca cuvantul asta e folosit ca lumea, dar appendix se 
+refera de obicei la foile care sunt disponbiil cu manualul asta, sau la finalul manualului unde sunt niste tabele)
+
+Un nou compartiment de ionizare este gata calibrat de Comecer Olanda cu trei surse de calibrare Cs-137, Co-57 si Co-60 atunci
+cand acestia parasesc fabrica. Asadar, nu este necesara calibrarea VIK-202 pentru prima utilizare.
+
+Pentru calibrarea unui compartiment de ionizare cu VDC-603, trei surse de calibrare sunt necesare: Co-57 (Energie scazuta)
+si Co-60 (Energie ridicata) sunt folosite pentru a efectua o calibrare in doua puncte. Sursa Cs-137 este
+folosita pentru verificarea calibrarii in zona de mijloc. Calibrarea ar trebui sa fie efectuata cu captuseala pusa si cu
+causul care va fi folosit in operarea normala a calibratorului de doze.
+
+*Procedura de calibrare*
+
+Dupa accesarea acestului element din meniu, se cere plasarea sursei de calibrare Co-57 in compartimentul de ionizare.
+Plasarea acestei surse va fi confirmata prin apasarea tastei OK.
+
+Urmatorul ecran va afisa valoarea activitatii masurate curente impreuna cu factorul de crestere mic curent al 
+compartimentului de ionizare. Este posibila modificarea factorului de crestere mica intre 7000 si 9000. Scazand
+aceasta valoare va rezulta intr-o citire mai mare a activitatii, iar crescand aceasta valoare va rezulta intr-o
+citire mai scazuta a activitatii.
+
+* Poza 9
+
+Dupa confirmarea ultimei cifre a cresterii mici, VDC-603 va afisa activitatea care corespunde cu factorul de crestere
+mica. Daca deviatia in masuratoarea activitatii este mai mica de +/- 1% de la valoarea activitatii cunoscute a sursei
+de calibrare, tasta OK poate fi apasata pentru confirmarea setarii de cresterii mici. Daca valoarea depaseste limita
+de +/-1% a surse de calibrare, asteptati 5 secunde si VDC-603 va reveni la meniul in care valoarea cresterii mici 
+poate fi modificata.
+
+Dupa acceptarea valorii de crestere mica, VDC-603 va cere plasarea sursei de calibrare Co-60 in compartimentul de ionizare.
+Sursa de calibrare Co-57 ar trebui sa fie scoasa din compartimentul de ionizare inainte de plasarea sursei de calibrare
+Co-60. Introducerea sursei de calibrare Co-60 trebuie confirmata prin apasarea tastei OK.
+
+Urmatorul ecran va afisa masuratoarea activitatii curente impreuna cu factorul de crestere mare curenta al VIK-202. Este
+posibila modificarea acestui factor de crestere mare intre 50 si 200. Scazand aceasta valoare va rezulta intr-o mai mica 
+ciitre a activitatii si o crestere a acestei valori va rezulta intr-o mai mare citire a activitatii.
+
+Dupa ce ultima cifra a valorii de crestere mare este confirmata, VDC-603 va afisa activitatea ce corspunde cu factorul
+de crestere mare. Daca deviatia de la activitatea masurata este mai mica de +/-1% de la valoarea cunoscuta a sursei de 
+calibrare, tasta OK poate fi apasata pentru a confirma setarea cresterii mari. Daca aceasta valoare nu este in limitele
+de +/-1% de la sursa calibrarii, asteptati 5 secunde si VDC-603 va reveni la ecranul in care valoarea cresterii mari poate
+fi modificata din nou.
+
+*NOTA:*
+
+Calibratorul de doza este calibrat din fabrica cu o sursa de calibrare care poate devia (factor de necunostinta) +/-3%
+si un nivel de confidenta de 99%. Acestea sunt valorile standard a majoritatii producatorilor de nuclizi. Cel mai bine
+pentru a intelege mai bine compartimentul este sa scrii factorii de crestere mica si crestere mare actuali. Apoi calibreaza,
+trimite un email catre Comecer Olanda cu rezultatul impreuna cu valorile vechi, numarul de serie al compartimentului si rezultatul
+ajustarii de tip "zero". Comecer Olanda poate verifica daca sistemul tau functioneaza in conditii optime.
+
+
+Alterarea valorii de crestere mare are un efect asupra citirii izotopului cu nivele scazute de energie ca Co-57. Este recomandata
+verificarea erorilor in regiunea cresterii mici prin repetarea procedurii de deasupra cu o sursa Co-57. Aceasta eroare ar trebui 
+ca in continuare sa fie in o limita de 1%.
+
+Daca citirea activitatii de la Co-57 si Co-60 amandoua deviaza mai putin de 1% de la activitatea actuala a sursei de calibrare,
+sectiunea de mijloc poate fi verificata cu o sursa de calibrare Cs-137.
+
+Selecteaza izotopul Cs-137 (vezi sectiunea 5.51) si masoara activitatea. Aceasta activitate masurata ar trebui sa fie +/-3% de la 
+valoarea specificata a activitatii sursei de calibrare.
+
+Repeta procedura de mai sus daca masuratoarea activitatii Cs-137 difera cu mai mult de 3%.
+
+5.5.11 Calibrarea bateriei
+
+Acest meniu este disponibil numai din meniul de supraveghere.
+
+*AVERTISMENT*
+
+Aceasta optiune nu ar trebui sa fie niciodata invocata in folosirea normala. Functia aceasta va standardiza voltajul bateriilor noi.
+Daca functia este folosita oricum, aceasta nu va influenta acuratetea instrumentului, totusi voltajul exact al bateriei nu poate fi
+determinat precis pana cand o noua baterie de tensiune inalta este instalata.
+
+Procedura de calibrare a bateriei ar trebui sa fie selectata numai cand o noua baterie este instalata in locul bateriei din 
+compartimentul de ionizare. Astfel, VDC-603 poate determina un mai precis voltaj al bateriei pe intreaga viata a bateriei.
+
+Procedura de calibrare a bateriei va standardiza voltajul bateriei la 155 Vdc. Dupa ce voltajul este standardizat, un factor este
+intors, acesta fiind un factor de corectie al voltajului masurat al bateriei comparat cu voltajul nominal al bateriei de 155 Vdc.
+
+Dupa efectuarea calibrarii bateriei, o verificare de tensiun inalta a bateriei din compartimentul de ionizare va returna o valoare
+de 155 Vdc.
+
+* Poza 10
+
+5.6 Procedura de masurare
+
+Calibratorul de doza VDC-603 sau VDC-603XR ar trebui sa fie gata de masurare (vezi sectiuena 4.2) inainte de a se purcede cu
+urmatorii pasi.
+
+- Intrati in meniu si selectati nuclidul care ar trebui masurat (vezi sectiunea 5.5.1)
+- Intoarceti-va la ecranul de masurare
+- Verifica ca unitatea de masura si nuclidul selectat sunt corecte
+- Plaseaza sursa in caus (vezi sectiunea 5.7)
+- Plaseaza causul cu sursa in compartimentul de ionizare
+- Unitatea de citire si control VDC-603 va afisa masuratoarea activitatii
+
+5.7 Folosirea causului
+
+Causul proiectat de Comecer Olanda este facut special pentru compartimentele de ionizare VIK-202 si VIK-203. Factorii izotopului
+sunt determinati cu ajutorul causului, asadar causul ar trebui sa fie mereu folosit pentru masuratori. Causul are o cupa in care
+se pun flacoanele si fiole si o clema de seringa care va gazdui majoritatea dimensiunilor de seringi. Inaltimea clemei de seringa
+si inaltimea de insertie ar trebui sa fie ajustate in asa fel incat masuratoarea izotopului sa fie intre 50 si 130 de la fundul
+ compartimentului de ionizare pentru a elimina dependenta de inaltime a masuratorii (vezi sectiunea 6.1.1)
+
